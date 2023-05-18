@@ -3,6 +3,7 @@
 //backup_mysql_database('my_database', 'my_username', 'my_password', 'localhost', 'utf8mb4', 'my_backup.sql');
 
 
+
 function backup_mysql_database($database, $user, $pass, $host = 'localhost', $charset = "utf8mb4", $filename = 'back.sql') {
     $conn = new mysqli($host, $user, $pass, $database);
     $conn->set_charset($charset);
