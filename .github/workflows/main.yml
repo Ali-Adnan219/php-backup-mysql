@@ -14,14 +14,14 @@ jobs:
 
     steps:
     - name: Checkout المخزن
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2.3.4
 
     - name: ضغط الملفات
       run: tar -czvf release.tar.gz *
 
     - name: إنشاء إصدار
       id: create_release
-      uses: actions/create-release@v1
+      uses: actions/create-release@v1.12.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
