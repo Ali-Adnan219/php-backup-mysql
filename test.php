@@ -34,6 +34,6 @@ bot('sendDocument',[
 😻file backup sql😻
 ===========
 
-'parse_mode'=>'markdown',
+"، 'parse_mode'=>'markdown',
 'disable_web_page_preview'=>'True'
 ]);
